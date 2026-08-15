@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
+import { File } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -11,7 +11,7 @@ import {
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
-import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si";
 import { config } from "@/data/config";
 
 import SectionWrapper from "../ui/section-wrapper";
@@ -55,9 +55,9 @@ const HeroSection = () => {
                           "cursor-default text-edge-outline font-display "
                         )}
                       >
-                        {config.author.split(" ")[0]}
+                        Asritha
                         <br className="md:block hiidden" />
-                        {config.author.split(" ")[1]}
+                        Thota
                       </h1>
                     </TooltipTrigger>
                     <TooltipContent
@@ -68,7 +68,6 @@ const HeroSection = () => {
                     </TooltipContent>
                   </Tooltip>
                 </BlurIn>
-                {/* <div className="md:block hidden bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 w-screen h-px animate-fade-right animate-glow" /> */}
                 <BlurIn delay={1.2}>
                   <p
                     className={cn(
@@ -76,14 +75,14 @@ const HeroSection = () => {
                       "cursor-default sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    Software Developer & AI/ML Enthusiast
                   </p>
                 </BlurIn>
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1MTSsUA8V7Po2AsNXT8kZ5sLOpzC8l7qm/view?usp=sharing"
+                    "https://drive.google.com/file/d/1Q50JWFCv-n18Yjk78yyGJd6OiBlJALkD/view"
                   }
                   target="_blank"
                   className="flex-1"
@@ -113,11 +112,11 @@ const HeroSection = () => {
                   </Tooltip>
                   <div className="flex items-center h-full gap-2">
                     <Link
-                      href={config.social.twitter}
+                      href={config.social.leetcode}
                       target="_blank"
                     >
                       <Button variant={"outline"}>
-                        <SiX size={24} />
+                        <SiLeetcode size={24} />
                       </Button>
                     </Link>
                     <Link

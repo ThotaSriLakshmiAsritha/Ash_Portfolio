@@ -1,45 +1,46 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Asritha | Software Developer & AI/ML Enthusiast",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of Thota Sri Lakshmi Asritha, a Computer Science student at VNRVJIET passionate about AI/ML, web development, and building intelligent systems. Discover projects like TrustLens, FinGuide, and SkillSync AI. Let's build something impactful together!",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Portfolio of Thota Sri Lakshmi Asritha — B.Tech CSE student, AI/ML developer, and full-stack web developer.",
   },
   keywords: [
-    "Naresh",
+    "Asritha",
+    "Thota Sri Lakshmi Asritha",
     "portfolio",
-    "full-stack developer",
-    "creative technologist",
+    "software developer",
+    "AI ML developer",
+    "machine learning",
     "web development",
-    "3D animations",
-    "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
-    "web design",
-    "GSAP",
+    "Python",
     "React",
     "Next.js",
-    "Spline",
-    "Framer Motion",
+    "TrustLens",
+    "FinGuide",
+    "SkillSync AI",
+    "VNRVJIET",
+    "computer science",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.dev",
+  author: "Thota Sri Lakshmi Asritha",
+  email: "asrithathota06@gmail.com",
+  site: "https://asritha.dev",
 
-  // for github stars button
-  githubUsername: "naresh-khatri",
-  githubRepo: "3d-portfolio",
+  // for github stars button — set to empty to hide
+  githubUsername: "ThotaSriLakshmiAsritha",
+  githubRepo: "workforce-skill-gap-forecasting",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    linkedin: "https://www.linkedin.com/in/asritha-thota-779153330/",
+    github: "https://github.com/ThotaSriLakshmiAsritha",
+    leetcode: "https://leetcode.com/u/asrithathota06",
+    // Keep twitter/instagram/facebook as empty strings to avoid broken links
+    twitter: "",
+    instagram: "",
+    facebook: "",
   },
 };
 export { config };

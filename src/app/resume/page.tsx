@@ -1,9 +1,9 @@
 import ResumeView from "./resume-view";
 
 export const metadata = {
-  title: "Résumé | Naresh Khatri",
+  title: "Résumé | Thota Sri Lakshmi Asritha",
   description:
-    "Résumé of Naresh Khatri — Senior Full-Stack Engineer. View online or download the PDF.",
+    "Résumé of Thota Sri Lakshmi Asritha — B.Tech CSE student, Software Developer & AI/ML Enthusiast at VNRVJIET. View online or download the PDF.",
 };
 
 export default function ResumePage() {

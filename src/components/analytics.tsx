@@ -2,18 +2,19 @@
 
 import * as React from "react";
 
-const ENDPOINT = "https://nareshkhatri.dev/api/collect";
+// Analytics beacon — disabled for now (no personal analytics endpoint configured)
+// Replace ENDPOINT and KEY with your own analytics service when deploying.
+const ENDPOINT = "";
 const KEY = "portfolio:site";
 
 const isLocal = (h: string) =>
   h === "localhost" ||
-  h === "127.0.0.1" ||
-  h === "nareshkhatri.dev" ||
-  h.endsWith(".nareshkhatri.dev");
+  h === "127.0.0.1";
 
 // records the deployment hostname once per browser, so I know where builds run.
 export default function Analytics() {
   React.useEffect(() => {
+    if (!ENDPOINT) return;
     const host = window.location.hostname;
     if (isLocal(host)) return;
 
