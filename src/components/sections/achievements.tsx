@@ -20,7 +20,7 @@ const achievements = [
     icon: Trophy,
     badge: "1st Place (400+ Teams)",
     link: "https://drive.google.com/file/d/17f2C20BppwcpTYjWMIQNQY7S3PIDH0_f/view?usp=drive_link",
-    image: "/assets/achievements/krithoathon.jpg",
+    image: "/assets/achievements/krithoathon-v2.jpg",
   },
   {
     id: 2,
