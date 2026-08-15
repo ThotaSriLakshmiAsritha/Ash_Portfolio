@@ -20,6 +20,7 @@ const achievements = [
     icon: Award,
     badge: "Microsoft Certified",
     link: "https://drive.google.com/file/d/1Q50JWFCv-n18Yjk78yyGJd6OiBlJALkD/view",
+    image: null,
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ const achievements = [
     icon: GraduationCap,
     badge: "Andrew Ng",
     link: "https://drive.google.com/file/d/1g61VQzjcSyDQCjh3Ym7Nq_tljniKe7bV/view?usp=sharing",
+    image: null,
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const achievements = [
     icon: Trophy,
     badge: "1st Place (400+ Teams)",
     link: "https://drive.google.com/file/d/17f2C20BppwcpTYjWMIQNQY7S3PIDH0_f/view?usp=drive_link",
+    image: "/assets/achievements/krithoathon.jpg",
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ const achievements = [
     icon: Medal,
     badge: "2nd Place (250+ Teams)",
     link: "https://drive.google.com/file/d/1GymBVA6Jv2JrvQgVj2wEL1sXaJMiY8Ox/view",
+    image: "/assets/achievements/innovathon.jpg",
   },
   {
     id: 5,
@@ -60,6 +64,7 @@ const achievements = [
     icon: Trophy,
     badge: "1st Place (200+ Teams)",
     link: "https://drive.google.com/file/d/1xU0J5R291Hhfi-XlPzt-TrnwLiVP2RBC/view",
+    image: "/assets/achievements/webathon.jpg",
   },
   {
     id: 6,
@@ -70,6 +75,7 @@ const achievements = [
     icon: Sparkles,
     badge: "1st Place Winner",
     link: "https://drive.google.com/file/d/1jx7oIQaJgfhiiHn6VQ09TgqWRwPIKSpn/view?usp=drive_link",
+    image: null,
   },
 ];
 
@@ -104,11 +110,22 @@ const AchievementsSection = () => {
               >
                 <Card
                   className={cn(
-                    "bg-card text-card-foreground border-border h-full flex flex-col justify-between",
+                    "bg-card text-card-foreground border-border h-full flex flex-col justify-between overflow-hidden group",
                     "hover:border-primary/40 hover:-translate-y-1 transition-all duration-300",
                     "shadow-sm hover:shadow-md backdrop-blur-sm bg-card/90"
                   )}
                 >
+                  {item.image && (
+                    <div className="relative w-full aspect-[16/10] overflow-hidden bg-muted">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-80" />
+                    </div>
+                  )}
                   <CardHeader className="pb-3">
                     <div className="flex flex-col gap-3">
                       <div className="flex items-center justify-between gap-2">
@@ -143,7 +160,7 @@ const AchievementsSection = () => {
                         target="_blank"
                         className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
                       >
-                        Verify Certificate
+                        Verify / View
                         <ExternalLink className="w-3 h-3" />
                       </Link>
                     </div>
